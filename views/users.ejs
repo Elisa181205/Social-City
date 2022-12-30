@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin - Usuários</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <script src="https://kit.fontawesome.com/944abe3983.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <div class="black_table">
+        <td><b>ID</b></td>
+        <td><b>Nome</b></td>
+        <td><b>Sobrenome</b></td>
+        <td><b>Email</b></td>
+        <td><b>Usuário</b></td>
+        <td><b>Gênero</b></td>
+        <td><b>Editar</b></td>
+        <td><b>Excluir</b></td></div>
+
+        <% for(var i =0;i<resultado.length;i++){ %>
+          <tr>
+              <% var id=resultado[i].id %>
+            <td><%= resultado[i].id %></td>
+            <td><%= resultado[i].nome %></td>
+            <td><%= resultado[i].sobrenome %></td>
+            <td><%= resultado[i].email %></td>
+            <td><%= resultado[i].nome_usuario %></td>
+            <td><%= resultado[i].genero %></td>
+            <td><a href="/buscaEditar/<%= id %>"><i class="fas fa-pen-square"></i></a></td>
+            <td><a href="/deletar/<%= id %>"><i class="fas fa-trash"></i></a></td>
+          </tr>
+
+
+        <%    }   %>
+  </body>
+</html>

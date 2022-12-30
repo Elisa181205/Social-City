@@ -1,0 +1,11 @@
+Colar logo após o <head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+
+colar após o <body>
+    <script type="text/javascript">
+    $("#telefone").mask("(00) 0000-0000");
+    </script>
+
+o id da input deve ser o mesmo do # da função

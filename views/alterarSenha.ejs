@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+	/*
+.menu{
+	margin-top:4%;
+	width: 10%;
+	height: 81%;
+	margin-left:24.99%;
+	border-style: groove;
+	box-shadow: 2px 4px 4px 3px rgb(53, 52, 52);
+
+}*/
+.fundo{
+	margin-top:4.5%;
+	width: 30%;
+	height: 80%;
+	margin-left:35%;
+	border-style: groove;
+	box-shadow: 2px 4px 4px 3px rgb(53, 52, 52);
+	position:absolute;
+	}
+.fund{
+	width:100%;
+	height: 30%;
+	margin-left:6%;
+}
+.at h1{
+
+	margin-top:8%;
+	font-size: 1.1em;
+	margin-left:3.5%;
+	margin-bottom: -0.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+.nv h1{
+	margin-top:8%;
+	font-size: 1.1em;
+	margin-left:3.5%;
+	margin-bottom: -0.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.primeiro{
+	color: rgb(38, 55, 150);
+	 text-shadow: black 0.1em 0.1em 0.2em;
+	font-family: 'Open Sans', sans-serif;
+	z-index: 99;
+  	margin-left:35%;
+}
+.segundo{
+  	width: 37%;
+  	height: 12%;
+  	margin-top:-5%;
+  	margin-left: -14%;
+  	position:fixed ;
+}
+.efeito{
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:-17%;
+	margin-left:-16%;
+  	text-align: center;
+}
+.segundo:hover ~ .efeito {
+	color: rgb(38, 55, 150);
+	 text-shadow: black 0.1em 0.1em 0.2em;
+}
+.primeiro:hover {
+	color: white;
+	 text-shadow: black 0.1em 0.1em 0.2em;
+	 }
+input[type=password]{
+	border-radius: 5px;
+	margin-top:-4%;
+	margin-bottom:5%;
+	background-color:rgba(165, 148, 148, 0);
+	border-style: outset;
+	width:50%;
+	height:12%;
+	margin-left:22%;
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+}
+input[type=submit]{
+	font-family: 'Prata', serif;
+	margin-bottom:102px;
+	border-style:solid;
+	width:30%;
+	height:12%;
+	margin-left:30%;
+	margin-top:15%;
+	background-color:#439edb;
+	font-family: 'Open Sans', sans-serif;
+}
+.usuario{
+	margin-top:-2%;
+	font-family: 'Open Sans', sans-serif;
+	margin-left:35%;
+	color: Blue;
+	margin-bottom:3%;
+
+}
+.voltar{
+	margin-top:-4%;
+	font-family: 'Open Sans', sans-serif;
+	margin-left:5%;
+	color: rgb(255, 255, 255);
+	margin-bottom:3%;
+
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet"><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!---
+	<div class="menu">
+		<li>Fedd</li>
+		<li>Mensagens</li>
+		<li>...</li>
+	</div>-->
+
+	<div class="fundo">
+
+	<div class="primeiro"> <h1>	Alterar</h1><div class="segundo"></div><div class="efeito"><H1>Senha</H1></div><BR><BR></div>
+		<div class="usuario"> <img src="user.jpg" width=40 height=40>Nome do usuário</div>
+		<div class="fund">
+	   <div class="at"><h1>Senha atual </h1> </div><input type="password" name="senha_atual" required placeholder="				*******					" >
+<div class="nv"><h1>Nova senha </h1> </div><input type="password" name="senha_nova" required placeholder="				*******					">
+<div class="nv"><h1>Confirmar </h1> </div><input type="password" name="con_senha_nova" required placeholder="				*******					">
+<input type="submit" value="Trocar" class="voltar">
+<div class="voltar"><a href="/perfil"> <img src="voltar.png" width=40 height=40></div></a>
+</div>
+</div>
+
+</body>
+</html>

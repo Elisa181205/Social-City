@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="feed.css" /media="screen"/>
+    <title>feed 2</title>
+  </head>
+  <body>
+
+    <% for(var i =0;i<resultado.length;i++){ %>
+
+      <div class="">    
+      <div class=""><%- resultado[i].assunto %></div>
+      <h1 class=""><%= resultado[i].nome_usuario %></h1><br>	
+      <div class=""><%= resultado[i].titulo %></div>
+      <div class=""><%- resultado[i].comentario %></div>
+
+        </div>
+     <%    }   %>
+  </body>
+</html>

@@ -1,0 +1,714 @@
+*{
+margin: 0;
+}
+.text_erro{
+  color: red;
+  margin-left: 50%;
+  margin-top: -7%;
+  font-size: 1.2em;
+  font-family: 'Helvetica', sans-serif;
+}
+.div_adicionar_foto i{
+  position: absolute;
+  right: 0;
+  padding: 20px 25px;
+}
+.div_adicionar_foto{
+  width: 550px;
+  height: 450px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 12.5%;
+  -webkit-box-shadow: -2px 0px 20px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 0px 20px 4px rgba(0,0,0,0.75);
+  box-shadow: -2px 0px 20px 4px rgba(0,0,0,0.75);
+}
+.colocar_foto{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 10%;
+  margin-left: 27%;
+}
+.div_adicionar_foto input{
+  position: absolute;
+  margin-top: 8.5%;
+  margin-left: 29%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.div_adicionar_foto input:hover{
+  border-color: #0066ff;
+  box-shadow: 0 0 3px 0 #0066ff;
+  color: white;
+  background-color: #0066ff;
+  transition: .3s;
+}
+.topo_feed{
+  width: 100vw;
+  height: 60px;
+  background-color: #0066ff;
+  box-shadow: 1px 1px 3px 0px #000000;
+}
+.topo_feed h1{
+  padding-left: 25px;
+  padding-top: 10px;
+  color: white;
+  font-size: 2em;
+}
+.nome_feed{
+  font-size: 1.2em;
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -2.1%;
+  color: white;
+  cursor: pointer;
+}
+.nome_feed a{
+  color: white;
+  text-decoration: none;
+}
+.feed_feed h1{
+  font-size: 1.2em;
+  position: absolute;
+  margin-left: 78%;
+  margin-top: -2.1%;
+  color: white;
+  cursor: pointer;
+}
+.olho i{
+  color: #42b72a;
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 36.3%;
+  cursor: pointer;
+}
+.semolho i{
+  color: #349121;
+  transition: .8s;
+  position: absolute;
+  margin-left: 89.8%;
+  margin-top: 36.3%;
+  cursor: pointer;
+}
+.cadastre_se h1{
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 2em;
+  padding-bottom: 10px;
+  font-family: 'Helvetica', sans-serif;
+}
+.cad_usuario input{
+  position: absolute;
+  margin-top: 23%;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_usuario input[type=text]{
+  padding-left: 40px;
+}
+.cad_usuario i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 25.70%;
+  margin-left: 4%;
+  transition: .3s;
+  font-size: 1.1em;
+  z-index: 2;
+}
+.cad_usuario input[type=text]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_usuario input[type=text]:focus + i{
+  color: #42b72a;
+}
+.cad_genero select{
+  position: absolute;
+  margin-top: 23%;
+  margin-left: 50.999%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_genero select{
+  padding-left: 40px;
+}
+.cad_genero select:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_genero i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 25.8%;
+  margin-left: 53.5%;
+  transition: .3s;
+  z-index: 99;
+}
+.cad_genero select:focus + i{
+  color: #42b72a;
+}
+
+.cad_telefone input{
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 47%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_name input{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_name input[type=text]{
+  padding-left: 40px;
+}
+.cad_name i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 4.5%;
+  margin-left: 4%;
+  transition: .3s;
+}
+.cad_name input[type=text]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_name input[type=text]:focus + i{
+  color: #42b72a;
+}
+.cad_sobrenome input{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 50.999%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_sobrenome input[type=text]{
+  padding-left: 40px;
+}
+.cad_sobrenome i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 4.5%;
+  margin-left: 53.5%;
+  transition: .3s;
+}
+.cad_sobrenome input[type=text]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_sobrenome input[type=text]:focus + i{
+  color: #42b72a;
+}
+.cad_email input{
+  position: absolute;
+  margin-top: 12.5%;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 574px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_email input[type=email]{
+  padding-left: 40px;
+}
+.cad_email i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 15%;
+  margin-left: 4%;
+  transition: .3s;
+}
+.cad_email input[type=email]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_email input[type=email]:focus + i{
+  color: #42b72a;
+}
+.cad_senha input{
+  position: absolute;
+  margin-top: 33.5%;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 574px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+.cad_senha input[type=text]{
+  padding-left: 40px;
+}
+.cad_senha input[type=text]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_senha input[type=text]:focus + i{
+  color: #42b72a;
+}
+.cad_senha input[type=password]{
+  padding-left: 40px;
+}
+.cad_senha i{
+  position: absolute;
+  color: #ddd;
+  margin-top: 36%;
+  margin-left: 4.4%;
+  transition: .3s;
+}
+.cad_senha input[type=password]:focus{
+  border-color: #42b72a;
+  box-shadow: 0 0 5px 0 #42b72a;
+}
+.cad_senha input[type=password]:focus + i{
+  color: #42b72a;
+}
+.cad_cadastrar input{
+  position: absolute;
+  margin-top: 45%;
+  margin-left: 30%;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+.cad_cadastrar input:hover{
+  background-color: #349121;
+}
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content{
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+}
+.close{
+  position: absolute;
+  top: 1.5%;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.body_cinza{
+  background-color: #f0f2f5;
+  height: 0px;
+}
+.div_azul{
+  background-color: #0066ff;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  margin-top: 12%;
+  -webkit-box-shadow: -1px 0px 50px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 50px -17px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 50px -17px rgba(0,0,0,0.75);
+}
+.div_azul h1{
+  color: white;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: 'Major Mono Display', monospace;
+  text-shadow: 2px 1px 5px #000000;
+}
+.div_azul h2{
+  color: white;
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-left: 20%;
+  font-family: 'Hunter', sans-serif;
+  text-shadow: 2px 1px 5px #000000;
+}
+.base_form{
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 470px;
+  height: 400px;
+  margin-left: 66%;
+  margin-top: 12.5%;
+}
+.wallpaper2{
+background-image: url("fundo3.jpg");
+width: 100vw;
+height: 100vh;
+position: absolute;
+}
+.wallpaper_rgba2{
+background-color:rgba(0,0,0,0.8);
+width: 100vw;
+height: 100vh;
+position: absolute;
+}
+.form_login{
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 70.90%;
+}
+.login_email input{
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 332px;
+  height: 50px;
+  margin-left: 18%;
+  margin-top: 15%;
+  border-radius: 5px;
+  position: relative;
+  outline: none;
+}
+.login_email input[type=text]{
+  padding-left: 40px;
+}
+.login_email input[type=text]:focus{
+  border-color: #0066ff;
+  box-shadow: 0 0 5px 0 #0066ff;
+}
+.login_email i{
+  position: absolute;
+  color: #ddd;
+  margin-top: -9%;
+  margin-left: 22%;
+  transition: .3s;
+}
+.login_email input[type=text]:focus + i{
+  color: dodgerBlue;
+}
+.login_senha input{
+  background: #FFFFFF;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  vertical-align: middle;
+  width: 332px;
+  height: 50px;
+  margin-top: 6%;
+  margin-left: 18%;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+}
+.login_senha input[type=password]:focus{
+  border-color: #0066ff;
+  box-shadow: 0 0 5px 0 #0066ff;
+}
+.login_senha input[type=password]{
+  padding-left: 40px;
+}
+.login_senha i{
+  position: absolute;
+  color: #ddd;
+  margin-top: -9%;
+  margin-left: 22%;
+  transition: .3s;
+}
+.login_senha input[type=password]:focus + i{
+  color: dodgerBlue;
+}
+.login_enviar input{
+  background-color: #0066ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  height: 50px;
+  color: white;
+  margin-top: 8%;
+  margin-left: 18%;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+}
+.login_enviar input:hover{
+  background-color: #0052cc;
+}
+.criar_conta{
+  background-color: #cc0000;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 301px;
+  height: 50px;
+  color: white;
+  margin-left: 18%;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+.criar_conta a{
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+#botao:hover{
+  background-color: #990000;
+}
+.divisor{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+  position: relative;
+  margin-left: 15.5%;
+  width: 350px;
+}
+
+.mover_login{
+  margin-left: 38%;
+  margin-top: 13.70%;
+  position: absolute;
+}
+.wallpaper{
+background-image: url("fundo3.jpg");
+width: 100vw;
+height: 100vh;
+}
+.wallpaper_rgba{
+background-color:rgba(0,0,0,0.7);
+width: 100vw;
+height: 100vh;
+}
+.wallpaper_rgba h1{
+color: #0066ff;
+font-size: 7em;
+margin-top: 18%;
+margin-left: 36%;
+position: absolute;
+font-family: 'Righteous', cursive;
+text-shadow: 2px 2px 4px #000000;
+}
+.wallpaper_rgba h1:hover{
+transform: scale(1.15);
+transition: 0.5s;
+}
+.wallpaper_rgba span{
+color: white;
+}
+.entrar input{
+position: absolute;
+margin-top: -25%;
+margin-left: 47%;
+border: none;
+width: 90px;
+height: 45px;
+background-color: #0066ff;
+color: white;
+border-radius: 2px;
+font-size: 1em;
+font-family: 'Poppins', sans-serif;
+}
+.entrar input:hover{
+background-color: white;
+color: #0066ff;
+border: 1px solid #0066ff;
+transform: scale(1.15);
+transition: 0.5s;
+}
+.registrar input:hover{
+background-color: white;
+color: #0066ff;
+border: 1px solid #0066ff;
+transform: scale(1.15);
+transition: 0.5s;
+}
+.registrar input{
+position: absolute;
+margin-top: -23.5%;
+margin-left: 50%;
+border: none;
+width: 90px;
+height: 40px;
+color: white;
+background-color: #0066ff;
+border-radius: 2px;
+font-size: 0.95em;
+font-family: 'Poppins', sans-serif;
+}
+.bluediv{
+  background-color: #0073e6;
+  width: 30%;
+  height: 78%;
+  position: absolute;
+  margin-left: 61%;
+  margin-top: 5%;
+}
+.whitediv{
+  background-color: #ffffff;
+  width: 55%;
+  height: 78%;
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 5%;
+}
+.shadow{
+  background-color: black;
+  width: 81.99%;
+  height: 78%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 9%;
+  box-shadow: 1px 3px 6px #000000;
+}
+.tema{
+  color: #0073e6;
+  font-size: 2.7em;
+  position: absolute;
+  margin-left: 24.5%;
+  font-weight: bold;
+  margin-top: 6%;
+  text-shadow: 1px 2px 3.5px #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+.login{
+  margin-left:30%;
+  margin-top:10%;
+  width: 60%;
+  height: 80%;
+  position: absolute;
+}
+.login h1{
+  text-align: center;
+}
+.cadastro{
+  margin-top:15%;
+  position: absolute;
+  margin-left:18%;
+}
+.cinza{/*
+  background: rgb(8,126,196);
+  background: linear-gradient(90deg, rgba(8,126,196,1) 0%, rgba(84,236,232,1) 33%, rgba(160,230,227,1) 62%, rgba(255,255,255,1) 100%);*/
+  background: rgb(8,126,196);
+  background: linear-gradient(90deg, rgba(8,126,196,1) 0%, rgba(144,238,234,1) 62%, rgba(157,227,223,1) 81%, rgba(255,255,255,1) 100%);
+  width: 100%;
+  height: 100%
+
+}
+input{
+  width: 200px;
+  height: 25px;
+}
+.tituloCadastro{
+  font-size:1em ;
+}

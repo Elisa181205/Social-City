@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Perfil</title>
+		<link rel="stylesheet" href="css/perfil.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/944abe3983.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="topo"><h1><a href="/feed">SocialCity</a></h1><a href="/feed"><div class="voltar"><i class="fas fa-arrow-left"></i> <h1>Voltar</h1></div></a>
+			<% if(locals.nome_usuario){ %>
+
+		<div class="perfil">
+		<img src="<%= nome_usuario.foto %>"/>
+		<div class="dropdown">
+			<span><div id="drop" class="perfil_nome"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+			<div id="dropp" class="perfil_nomee"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+			<div class="dropdown-content">
+			<div class="drop_perfil"><h3><i class="fas fa-user-alt"></i> <a href="/perfil">Perfil</a></h3></div>
+			<div class="drop_config"><h3><i class="fas fa-cog"></i> <a href="/editarBusca/<%= id_.id_ %>">Configurações</a></h3></div>
+			<div class="drop_sair"><h3><i class="fas fa-times"></i> <a href="/logout">Sair</a></h3></div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<% } %>
+
+		<div class="arte_do_canal"><img src="cidade.jpg"/>
+			<div class="barra_de_informacoes"><h1>
+				<% if(locals.nome){ %>
+				<%	if(locals.sobrenome){ %>
+				  <%= nome.nome %>
+					<%= sobrenome.sobrenome %>
+					<%  } %>
+					<%  } %> </h1>
+					<div class="nome_informacoes">
+						<% if(locals.nome_usuario){ %>
+							<h1>@<%= nome_usuario.nome_usuario %></h1>
+						<%  } %>
+					</div>
+				</div>
+		</div>
+		<div class="arte_do_meliante"><img src="<%= nome_usuario.foto %>"/></div>
+		<div class="menu_de_informacoes">
+			<div class="menu_nome"><i class="fas fa-user"></i><h1>Nome: <%= nome.nome %></h1></div>
+			<div class="menu_sobrenome"><i class="fas fa-user"></i><h1>Sobrenome: <%= sobrenome.sobrenome %></h1></div>
+			<div class="menu_email"><i class="fas fa-envelope"></i><h1>Email: <%= email.email %></h1></div>
+			<div class="menu_genero"><i class="fas fa-genderless"></i><h1>Gênero: <%= genero.genero %></h1></div>
+			<div class="menu_config"><i class="fas fa-cog"></i><h1><a href="/editarBusca/<%= id_.id_ %>">Configurações</a></h1></div>
+		</div>
+
+
+		<% for(var i =0;i<resultado.length;i++){ %>
+
+		<% if(nome_usuario.nome_usuario == resultado[i].nome_usuario){ %>
+
+
+		<div class="perfil_post">
+			<div class="perfil_post_imagem"><img src="<%= nome_usuario.foto %>"/></div>
+			<div class="perfil_post_nome"><h1><%= nome_usuario.nome_usuario %></h1></div>
+			<div class="postagem_titulo"><%= resultado[i].titulo %></div><br>
+		  <div class="postagem_body"><%- resultado[i].body %></div>
+			<% if(resultado[i].imagem == 0){ %>
+
+			<%    }else{   %>
+				<div class="upload_imagem"><img src="uploads/<%= resultado[i].imagem %>"  height="42px" width="42"></div>
+			<% } %>
+		</div>
+
+		<%    }   %>
+		<%    }   %>
+
+	</body>
+</html>
+<script>
+
+document.getElementById('drop').addEventListener('click',function(){
+  document.querySelector('.dropdown:hover .dropdown-content').style.display = 'block';
+  document.querySelector('.perfil_nome a').style.display = 'none';
+  document.querySelector('.perfil_nomee a').style.display = 'block';
+  document.querySelector('.dropdown-content').style.display = 'block';
+});
+
+document.getElementById('dropp').addEventListener('click',function(){
+  document.querySelector('.dropdown-content').style.display = 'none';
+  document.querySelector('.perfil_nome a').style.display = 'block';
+  document.querySelector('.perfil_nomee a').style.display = 'none';
+});
+
+
+</script>

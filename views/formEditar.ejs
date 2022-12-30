@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Admin - Editar</title>
+  <link rel="stylesheet" type="text/css" href="../admin.css">
+  </head>
+  <body>
+    <div class="form_editar">
+    <form action="/editar" method="POST"/>
+    <div class="form_nome"><table>Nome:</table> <input type="text" name="nome" value="<%= resultado[0].nome %>"/><br/></div>
+    <div class="form_sobrenome"><table>Sobrenome:</table> <input type="text" name="sobrenome" value="<%= resultado[0].sobrenome %>"/><br/></div>
+    <div class="form_email"><table>Email:</table> <input type="text" name="email" value="<%= resultado[0].email %>"/><br/></div>
+    <div class="form_usuario"><table>Usuário:</table> <input type="text" name="nome_usuario" value="<%= resultado[0].nome_usuario %>"/><br/></div>
+    <div class="form_genero"><table>Gênero:</table> <input type="text" name="genero" value="<%= resultado[0].genero %>"/><br/></div>
+    <div class="form_cargo"><table>Cargo:</table> <input type="text" name="cargo" value="<%= resultado[0].cargo %>"/><br/></div>
+    <input type="hidden" name="id" value="<%= resultado[0].id %>"/>
+    <div class="form_submit"><input type="submit" value="Editar"/></div>
+    </form>
+    </div>
+  </body>
+</html>

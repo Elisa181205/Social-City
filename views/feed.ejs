@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feed</title>
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/944abe3983.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="topo"><h1><a href="/feed">SocialCity</a></h1>
+    <% if(locals.nome_usuario){ %>
+
+  <div class="perfil">
+  <img src="<%= nome_usuario.foto %>"/>
+  <div class="dropdown">
+    <span><div id="drop" class="perfil_nome"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+    <div id="dropp" class="perfil_nomee"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+    <div class="dropdown-content">
+    <div class="drop_perfil"><h3><i class="fas fa-user-alt"></i> <a href="/perfil">Perfil</a></h3></div>
+  	<div class="drop_config"><h3><i class="fas fa-cog"></i> <a href="/editarBusca/<%= id_.id_ %>">Configurações</a></h3></div>
+  	<div class="drop_sair"><h3><i class="fas fa-times"></i> <a href="/logout">Sair</a></h3></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <% } %>
+  <div class="categorias"><h2>Categorias</h2></div>
+  <a href="/emprego">
+  <div class="emprego">
+  <div class="logo_emprego"><i class="fas fa-briefcase"></i></div>
+  <h1>Empregos</h1>
+  </div></a>
+
+  <a href="/acidente">
+  <div class="acidente">
+  <div class="logo_acidente"><i class="fas fa-exclamation-circle"></i></div>
+  <h1>Acidentes</h1>
+  </div></a>
+
+  <a href="/evento">
+  <div class="evento">
+  <div class="logo_evento"><i class="fas fa-calendar-alt"></i></div>
+  <h1>Eventos</h1>
+  </div></a>
+
+  <a href="/ong">
+  <div class="ongs">
+  <div class="logo_ongs"><i class="fas fa-fist-raised"></i></div>
+  <h1>ONG's</h1>
+  </div></a>
+
+  <a href="/comercio">
+  <div class="comercio">
+  <div class="logo_comercio"><i class="fas fa-store"></i></div>
+  <h1>Comércios</h1>
+  </div></a>
+
+  <a href="/alerta">
+  <div class="alerta">
+  <div class="logo_alerta"><i class="fas fa-exclamation-triangle"></i></div>
+  <h1>Alertas</h1>
+  </div></a>
+
+  <% if(locals.cargo){ %>
+  <% if(cargo.cargo == 1){ %>
+  <a href="/admin">
+  <div class="admin">
+  <div class="logo_admin"><i class="fas fa-tools"></i></div>
+  <h1>Admin</h1>
+  </div></a>
+  <% } %>
+  <% } %>
+
+  </body>
+</html>
+
+<script>
+
+document.getElementById('drop').addEventListener('click',function(){
+  document.querySelector('.dropdown:hover .dropdown-content').style.display = 'block';
+  document.querySelector('.perfil_nome a').style.display = 'none';
+  document.querySelector('.perfil_nomee a').style.display = 'block';
+  document.querySelector('.dropdown-content').style.display = 'block';
+});
+
+document.getElementById('dropp').addEventListener('click',function(){
+  document.querySelector('.dropdown-content').style.display = 'none';
+  document.querySelector('.perfil_nome a').style.display = 'block';
+  document.querySelector('.perfil_nomee a').style.display = 'none';
+});
+
+
+</script>

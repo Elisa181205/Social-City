@@ -1,0 +1,340 @@
+*{
+  margin: 0;
+}
+.topo{
+	width: 100%;
+	height: 72px;
+	background-color: #0066ff;
+	-webkit-box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+}
+.topo h1 a{
+	color: white;
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
+	margin-left: 270px;
+	text-decoration: none;
+}
+.perfil{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid white;
+	margin-top: 9px;
+	position: absolute;
+	margin-left: 1470px;
+	background-color: white;
+}
+.voltar{
+  color: white;
+  margin-top: 28px;
+	margin-left: 450px;
+  position: absolute;
+	font-size: 14px;
+}
+.voltar h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: -18px;
+}
+.perfil img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.perfil_nome a{
+	color: white;
+	font-size: 1.2em;
+	margin-left: 60px;
+	margin-top: -54px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	position: absolute;
+}
+.perfil_nomee a{
+	color: white;
+	font-size: 1.2em;
+	margin-left: 60px;
+	margin-top: -54px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	position: absolute;
+	display: none;
+}
+
+.drop_perfil i{
+	color: #0066ff;
+	font-size: 20px;
+}
+.drop_perfil a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.drop_perfil a:hover{
+	color: #8c8c8c;
+}
+
+.drop_config i{
+	color: #0066ff;
+	font-size: 20px;
+}
+.drop_config a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.drop_config a:hover{
+	color: #8c8c8c;
+}
+
+.drop_sair i{
+	color: #0066ff;
+	margin-left: 2.5px;
+	font-size: 20px;
+}
+.drop_sair a{
+	color: black;
+	text-decoration: none;
+	margin-left: 14px;
+}
+.drop_sair a:hover{
+	color: #8c8c8c;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9em;
+  margin-top: -15px;
+}
+
+.dropdown-content {
+  display: none;
+}
+.arte_do_canal{
+  width: 920px;
+  height: 300px;
+  background-color: white;
+  border: 0px solid black;
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 26%;
+  border-radius: 5px;
+}
+.arte_do_canal img{
+  border-radius: 3px;
+}
+.arte_do_meliante{
+  width: 150px;
+  height: 150px;
+  background-color: none;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 540px;
+}
+.arte_do_meliante img{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.barra_de_informacoes{
+  width: 916px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  margin-top: -40px;
+  z-index: -2;
+  border-radius: 5px;
+}
+.barra_de_informacoes h1{
+  margin-top: 4%;
+  margin-left: 22%;
+  position: absolute;
+  font-family: 'Roboto';
+  color: black;
+  font-size: 25px;
+  z-index: 5;
+}
+.nome_informacoes h1{
+  position: absolute;
+  margin-top: 7.5%;
+  font-size: 18px;
+  color: #0066ff;
+}
+.menu_de_informacoes{
+  width: 300px;
+  height: 257px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 21%;
+  margin-left: 26%;
+  -webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+}
+.menu_nome{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+.menu_nome i{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 19px;
+  margin-left: 15px;
+}
+.menu_nome h1{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 47px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+}
+.menu_sobrenome{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+}
+.menu_sobrenome i{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+.menu_sobrenome h1{
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 45px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+}
+.menu_email{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+}
+.menu_email i{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+.menu_email h1{
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 47px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+}
+.menu_genero{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+}
+.menu_genero i{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+.menu_genero h1{
+  font-size: 18px;
+  margin-top: 13px;
+  margin-left: 47px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+}
+.menu_config{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+}
+.menu_config:hover, .menu_config i:hover{
+  background-color: #ddd;
+  border-left: 2px solid black;
+  width: 298px;
+}
+.menu_config i{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+.menu_config i:hover{
+  color: #0066ff;
+  transform: rotate(30deg);
+  transition: .1s
+}
+.menu_config h1 a{
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 47px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.perfil_post{
+  width: 595px;
+  height: 400px;
+  background-color: white;
+  margin-top: -257px;
+  margin-left: 42.5%;
+  -webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+  margin-bottom: 275px;
+  border-radius: 8px;
+}
+.upload_imagem img{
+	width: 50%;
+	height: 50%;
+  margin-left: 20px;
+}
+.postagem_titulo{
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.postagem_body{
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.perfil_post_imagem img{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.perfil_post_nome h1{
+  font-size: 20px;
+  font-family: 'Roboto';
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 70px;
+}

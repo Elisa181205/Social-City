@@ -1,0 +1,531 @@
+*{
+		margin: 0;
+}
+.topo{
+	width: 100%;
+	height: 72px;
+	background-color: #0066ff;
+	-webkit-box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.75);
+}
+.topo h1 a{
+	color: white;
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
+	margin-left: 270px;
+	text-decoration: none;
+}
+.perfil{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid white;
+	margin-top: 9px;
+	position: absolute;
+	margin-left: 1470px;
+	background-color: white;
+}
+.perfil img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.perfil_nome a{
+	color: white;
+	font-size: 1.2em;
+	margin-left: 60px;
+	margin-top: -53px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	position: absolute;
+}
+.perfil_nomee a{
+	color: white;
+	font-size: 1.2em;
+	margin-left: 60px;
+	margin-top: -53px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	position: absolute;
+	display: none;
+}
+.categorias h2{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	margin-top: 45px;
+	margin-left: 21%;
+	font-size: 2.1em;
+}
+.drop_perfil i{
+	color: #0066ff;
+	font-size: 20px;
+}
+.drop_perfil a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.drop_perfil a:hover{
+	color: #8c8c8c;
+}
+
+.drop_config i{
+	color: #0066ff;
+	font-size: 20px;
+}
+.drop_config a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.drop_config a:hover{
+	color: #8c8c8c;
+}
+
+.drop_sair i{
+	color: #0066ff;
+	margin-left: 2.5px;
+	font-size: 20px;
+}
+.drop_sair a{
+	color: black;
+	text-decoration: none;
+	margin-left: 14px;
+}
+.drop_sair a:hover{
+	color: #8c8c8c;
+}
+.voltar{
+  color: white;
+  margin-top: 28px;
+	margin-left: 450px;
+  position: absolute;
+	font-size: 14px;
+}
+.voltar h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: -18px;
+}
+.menu_dados{
+	width: 350px;
+	height: 212px;
+	background-color: white;
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 21%;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+}
+.meus_dados{
+  position: absolute;
+  margin-top: 6px;
+  width: 350px;
+  height: 50px;
+  border-radius: 2px;
+}
+.meus_dados:hover{
+	background-color: #ddd;
+  border-left: 2px solid black;
+  width: 348px;
+}
+.meus_dados h1{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 13px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.meus_dados_foto{
+  position: absolute;
+  margin-top: 55px;
+  width: 350px;
+  height: 50px;
+  border-radius: 2px;
+}
+.meus_dados_foto:hover{
+	background-color: #ddd;
+  border-left: 2px solid black;
+  width: 348px;
+}
+.meus_dados_foto h1{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 13px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.meus_dados_usuario{
+  position: absolute;
+  margin-top: 105px;
+  width: 350px;
+  height: 50px;
+  border-radius: 2px;
+}
+.meus_dados_usuario:hover{
+	background-color: #ddd;
+  border-left: 2px solid black;
+  width: 348px;
+}
+.meus_dados_usuario h1{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 13px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.meus_dados_senha{
+  position: absolute;
+  margin-top: 155px;
+  width: 350px;
+  height: 50px;
+  border-radius: 2px;
+}
+.meus_dados_senha:hover{
+  background-color: #ddd;
+  border-left: 2px solid black;
+  width: 348px;
+}
+.meus_dados_senha h1{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 13px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.menu_informacoes{
+	width: 550px;
+	height: 250px;
+	background-color: white;
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 43%;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+}
+
+.menu_informacoes_dados h1{
+  color: black;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.menu_informacoes_nome h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.menu_informacoes_nome_2{
+  background-color: rgb(41, 41, 46);
+  position: absolute;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 105px;
+  margin-left: 30px;
+}
+.menu_informacoes_nome_2 h1{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Roboto';
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+.menu_informacoes_sobrenome h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-left: 170px;
+}
+.menu_informacoes_sobrenome_2{
+  background-color: rgb(41, 41, 46);
+  position: absolute;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 105px;
+  margin-left: 170px;
+}
+.menu_informacoes_sobrenome_2 h1{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Roboto';
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+.menu_informacoes_email h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 160px;
+  margin-left: 30px;
+}
+.menu_informacoes_email_2{
+  background-color: rgb(41, 41, 46);
+  position: absolute;
+  width: 260px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 185px;
+  margin-left: 30px;
+}
+.menu_informacoes_email_2 h1{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Roboto';
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+.menu_informacoes_genero h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-left: 309px;
+}
+.menu_informacoes_genero_2{
+  background-color: rgb(41, 41, 46);
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 105px;
+  margin-left: 309px;
+}
+.menu_informacoes_genero_2 h1{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Roboto';
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.menu_informacoes_usuario h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 160px;
+  margin-left: 309px;
+}
+.menu_informacoes_usuario_2{
+  background-color: rgb(41, 41, 46);
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 185px;
+  margin-left: 309px;
+}
+.menu_informacoes_usuario_2 h1{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  font-family: 'Roboto';
+  margin-top: 8px;
+  margin-left: 45px;
+}
+
+.menu_foto_perfil{
+	width: 550px;
+	height: 190px;
+	background-color: white;
+	position: absolute;
+	margin-top: 405px;
+	margin-left: 43%;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.73);
+}
+
+.menu_foto_perfil_titulo h1{
+  color: black;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.upload{
+  margin-top: 15%;
+  margin-left: 30px;
+  border: none;
+  color: black;
+  height: 35px;
+  font-size: 14px;
+  outline: none;
+}
+
+.enviar{
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+	margin-left: 30px;
+}
+.enviar:hover{
+  background-color: #ddd;
+}
+
+.menu_usuario{
+	width: 550px;
+	height: 200px;
+	background-color: white;
+	position: absolute;
+	margin-top: 621px;
+	margin-left: 43%;
+	border-radius: 8px;
+	box-shadow: 0px 2px 20px -10px rgba(0,0,0,0.75);
+}
+.menu_usuario_titulo h1{
+  color: black;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.userAt h1{
+  color: rgb(115, 115, 128);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.userNv h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+.userNv input{
+  margin-top: 7px;
+  width: 220px;
+  height: 30px;
+  border: none;
+  color: black;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-left: 95px;
+  outline: none;
+}
+
+.alterar_usuario input{
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.alterar_usuario input:hover{
+  background-color: #ddd;
+}
+
+.menu_senha{
+	width: 550px;
+	height: 170px;
+	background-color: white;
+	position: absolute;
+	margin-top: 227px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 20px -10px rgba(0,0,0,0.75);
+}
+
+.menu_senha_titulo h1{
+  color: black;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30%;
+}
+.userNovaSenha h1{
+  color: rgb(115, 115, 128);
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.userNovaSenha input{
+  margin-top: 65px;
+  width: 190px;
+  height: 30px;
+  border: none;
+  color: black;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-left: 125px;
+  outline: none;
+}
+.alterar_senha input{
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.alterar_senha input:hover{
+  background-color: #ddd;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9em;
+	margin-top: -15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: none;
+}

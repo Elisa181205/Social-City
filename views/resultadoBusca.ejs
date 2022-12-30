@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Resultados de busca</title>
+  </head>
+  <body>
+    <h1>Resultados de busca</h1>
+    <form action="/buscarNome" method="POST">
+      <input type="text" name="nomeBusca" placeholder="Digite o nome para buscar"/>
+      <input type="submit" value="Buscar pelo Nome"/>
+    </form>
+    <br/>
+    <table border="1">
+      <tr>
+        <td><b>Nome</b></td>
+        <td><b>Sobrenome</b></td>
+        <td><b>Email</b></td>
+
+        <% for(var i =0;i<resultado.length;i++){ %>
+          <tr>
+            <td><%= resultado[i].nome %></td>
+            <td><%= resultado[i].sobrenome %></td>
+            <td><%= resultado[i].email %></td>
+          </tr>
+
+
+        <%    }   %>
+    </table>
+  </body>
+</html>

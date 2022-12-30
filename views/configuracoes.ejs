@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Configurações</title>
+		<link rel="stylesheet" href="../css/config.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/944abe3983.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="topo"><h1><a href="/feed">SocialCity</a></h1><a href="/perfil"><div class="voltar"><i class="fas fa-arrow-left"></i> <h1>Voltar</h1></div></a>
+
+			<% if(locals.nome_usuario){ %>
+
+	  <div class="perfil">
+	  <img src="<%= locals.foto %>"/>
+		<div class="dropdown">
+			<span><div id="drop" class="perfil_nome"><a href="#"><%= locals.nome_usuario %></a></div></span>
+			<div id="dropp" class="perfil_nomee"><a href="#"><%= locals.nome_usuario %></a></div></span>
+			<div class="dropdown-content">
+			<div class="drop_perfil"><h3><i class="fas fa-user-alt"></i> <a href="/perfil">Perfil</a></h3></div>
+			<div class="drop_config"><h3><i class="fas fa-cog"></i> <a href="/editarBusca/<%= id_.id_ %>">Configurações</a></h3></div>
+			<div class="drop_sair"><h3><i class="fas fa-times"></i> <a href="/logout">Sair</a></h3></div>
+			</div>
+		</div>
+	  </div>
+	  </div>
+	  <% } %>
+		<div class="categorias"><h2>Configurações</h2></div>
+
+	  <div class="menu_dados">
+			<div class="meus_dados"><h1>Meu dados</h1></div>
+			<div class="meus_dados_foto"><h1>Alterar foto</h1></div>
+			<div class="meus_dados_usuario"><h1>Alterar usuário</h1></div>
+			<div class="meus_dados_senha"><h1>Alterar senha</h1></div>
+	  </div>
+
+		<div class="menu_informacoes">
+			<div class="menu_informacoes_dados"><h1>Meus dados</h1></div>
+			<div class="menu_informacoes_nome"><h1>Nome</h1></div>
+			<div class="menu_informacoes_nome_2"><h1><% if(locals.nome){ %> <%= nome %> <%  } %></h1></div>
+			<div class="menu_informacoes_sobrenome"><h1>Sobrenome</h1></div>
+			<div class="menu_informacoes_sobrenome_2"><h1><% if(locals.sobrenome){ %> <%= sobrenome %> <%  } %></h1></div>
+			<div class="menu_informacoes_email"><h1>Email</h1></div>
+			<div class="menu_informacoes_email_2"><h1><% if(locals.email){ %> <%= email %> <%  } %></h1></div>
+			<div class="menu_informacoes_genero"><h1>Gênero</h1></div>
+			<div class="menu_informacoes_genero_2"><h1><% if(locals.genero){ %> <%= genero %> <%  } %></h1></div>
+			<div class="menu_informacoes_usuario"><h1>Usuário</h1></div>
+			<div class="menu_informacoes_usuario_2"><h1><% if(locals.nome_usuario){ %> <%= nome_usuario %> <%  } %></h1></div>
+		</div>
+
+		<div class="menu_foto_perfil">
+			<div class="menu_foto_perfil_titulo"><h1>Foto de perfil</h1></div>
+			<form method="post" action="/avatar" enctype="multipart/form-data">
+    		<div class="formWrapper">
+        <div class="upload">
+					<input type="file" name="avatar" accept="image/*">
+        </div>
+        <input class="enviar" type="submit" value="Alterar foto">
+			</form>
+    </div>
+		</div>
+
+		<div class="menu_usuario">
+			<div class="menu_usuario_titulo"><h1>Nome de usuário</h1></div>
+			<form action="/FazerEdicao" method="POST">
+			<div class="userAt"><h1>Nome de usuário atual: <% if(locals.nome_usuario){ %><%= nome_usuario%><%  } %><br>
+			<div class="userNv"><h1>Novo usuário: </h1> <input type="text" name="nome_usuario" required placeholder="Digite seu novo nome de usuário"></div>
+			<input type="hidden" name="id" value="<% if(locals.id_){ %><%= id_ %><%  } %>"/>
+			<div class="alterar_usuario"><input type="submit" value="Alterar usuário"/></div>
+			</form>
+		</div>
+
+		<div class="menu_senha">
+			<div class="menu_senha_titulo"><h1>Alterar senha</h1></div>
+			<form action="/EdicaoSenha" method="POST">
+    	<div class="userNovaSenha"><h1>Nova senha: </h1> <input type="password" name="senha" required placeholder="Digite aqui sua nova senha"></div>
+    	<input type="hidden" name="id" value="<% if(locals.id_){ %><%= id_ %><%  } %>"/>
+			<div class="alterar_senha"><input type="submit" value="Alterar senha"/></div>
+			<a href="/editarBusca/id_" title="Fechar" class="fechar"></a>
+			</form>
+		</div>
+
+	</body>
+</html>
+<script>
+
+document.getElementById('drop').addEventListener('click',function(){
+  document.querySelector('.dropdown:hover .dropdown-content').style.display = 'block';
+  document.querySelector('.perfil_nome a').style.display = 'none';
+  document.querySelector('.perfil_nomee a').style.display = 'block';
+  document.querySelector('.dropdown-content').style.display = 'block';
+});
+
+document.getElementById('dropp').addEventListener('click',function(){
+  document.querySelector('.dropdown-content').style.display = 'none';
+  document.querySelector('.perfil_nome a').style.display = 'block';
+  document.querySelector('.perfil_nomee a').style.display = 'none';
+});
+
+
+</script>

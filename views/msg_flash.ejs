@@ -1,0 +1,31 @@
+<head>
+
+    <style>
+        .joao {
+            font-weight: bold;
+            color: red;
+            margin-left: 38.5%;
+        }
+    </style>
+
+</head>
+
+<% if(success_msg){ %>
+
+
+    <p class="joao">
+        <%= success_msg %>
+    </p>
+
+    <% }  %>
+
+
+        <% if(error_msg){ %>
+
+
+            <p class="joao">
+                <%= error_msg %>
+            </p>
+
+
+            <% }  %>

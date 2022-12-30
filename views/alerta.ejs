@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/alerta.css" /media="screen"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/944abe3983.js" crossorigin="anonymous"></script>
+	<title>Alertas</title>
+	</head>
+	<body>
+		<div class="topo"><h1><a href="/feed">SocialCity</a></h1><a href="/feed"><div class="voltar"><i class="fas fa-arrow-left"></i> <h1>Voltar</h1></div></a>
+		<div class="categoria_em">Alertas</div>
+			<% if(locals.nome_usuario){ %>
+
+		<div class="perfil">
+		<img src="<%= nome_usuario.foto %>"/>
+		<div class="dropdown">
+			<span><div id="drop" class="perfil_nome"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+			<div id="dropp" class="perfil_nomee"><a href="#"><%= nome_usuario.nome_usuario %></a></div></span>
+			<div class="dropdown-content">
+			<div class="drop_perfil"><h3><i class="fas fa-user-alt"></i> <a href="/perfil">Perfil</a></h3></div>
+			<div class="drop_config"><h3><i class="fas fa-cog"></i> <a href="/editarBusca/<%= id_.id_ %>">Configurações</a></h3></div>
+			<div class="drop_sair"><h3><i class="fas fa-times"></i> <a href="/logout">Sair</a></h3></div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<% } %>
+
+
+		<div class="center">
+			<div class="post">
+				<form action="/postagens/nova" method="POST">
+					<% if(locals.nome_usuario){ %>
+				<img src="<%= nome_usuario.foto %>"/><h1><%= nome_usuario.nome_usuario %></h1>
+				<% } %>
+				<input class="input_text" id="botao" type="button" name="" value="Digite uma nova postagem..."/>
+
+			</form>
+			</div>
+
+			<div class="bg-modal">
+				<div class="modal-content">
+						<form action="/postarAlerta" method="POST">
+							<div class="titulo_post"><label>Titulo:</label>
+							<input type="text" name="titulo" required=""placeholder=""/></div>
+						<input type="hidden" name="assunto" value="Alertas">
+							<% if(locals.nome_usuario){ %>
+						<input type="hidden" name="nome_usuario" value="<%= nome_usuario.nome_usuario %>">
+						<% } %>
+						<% if(locals.foto){ %>
+						<input type="hidden" name="foto" value="<%= foto.foto %>"/>
+						<% } %>
+						<textarea placeholder="Descrição..." name="body" id="article"></textarea> <br>
+				  <div class="close">+</div>
+				  <form method="post" action="/avatar" enctype="multipart/form-data">
+					<div class="formWrapper">
+						<div class="upload">
+							<div class="inputFileOverlay"><h1>Selecione o arquivo</h1></div>
+							<input type="file" name="imagem" accept="image/*">
+						</div>
+						<input class="input_botao" type="submit" value="Enviar">
+					</div>
+				  </form>
+					</form>
+					</div>
+			  </div>
+			</body>
+			<% for(var i =0;i<resultado.length;i++){ %>
+
+				<div class="postagem">
+					<form action="/denunciar_alerta" method="POST" style="display: inline;" onsubmit="confirmarPergunta(event, this)">
+						<input type="hidden" name="id" value="<%= resultado[i].id %>">
+							  <input type="hidden" name="cargo" value="1">
+						<div class="denunciar"><button>Denunciar</button></div>
+						</form>
+						<div class="postagem_perfil"><img  src="<%= resultado[i].foto %>"/></div>
+						<div class="separar_linha"></div>
+				<h1 class="postagem_usuario"><%= resultado[i].nome_usuario %></h1>
+				<div class="postagem_titulo"><%= resultado[i].titulo %></div><br>
+				<div class="postagem_body"><%- resultado[i].body %></div>
+				<% if(resultado[i].imagem == 0){ %>
+				<%    }else{   %>
+					<div class="upload_imagem"><img src="uploads/<%= resultado[i].imagem %>"  height="42px" width="42"></div>
+				<% } %>
+
+				<form action="/pos" method="POST">
+					<div class="fieldest">
+					<input type="hidden" name="titulo">
+					<input type="hidden" name="assunto" value="Alertas">
+						<% if(locals.nome_usuario){ %>
+					<input type="hidden" name="nome_usuario" value="<%= nome_usuario.nome_usuario %>">
+					<% } %>
+
+						</div>
+				</form>
+
+
+			</div>
+			<div class="separar_linha_2"></div>
+
+			<div class="comentarios">
+			<img src="<%= nome_usuario.foto %>"/>
+			<form action="/comentar_alerta" method="POST">
+			<input type="hidden" name="id_post" value="<%= resultado[i].id %>">
+			<% if(locals.nome_usuario){ %>
+			<input type="hidden" name="nome_usuario" value="<%= nome_usuario.nome_usuario %>">
+			<% } %>
+			<input type="hidden" name="assunto" value="Alerta"/>
+			<input type="text" name="comentario" placeholder="Digite seu comentario...">
+			<input type="submit" value="Comentar">
+
+			</form>
+			</div>
+
+			  <%    }   %>
+
+	<script src="/tinymce/tinymce.min.js"></script>
+</html>
+<script>
+
+document.getElementById('botao').addEventListener('click',function(){
+	document.querySelector('.bg-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click',function(){
+	document.querySelector('.bg-modal').style.display = 'none';
+});
+</script>
+<script src="/tinymce/tinymce.min.js"></script>
+
+<script>
+        	tinymce.init({
+
+              selector: "#article"
+
+          	})
+</script>
+<script>
+function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+</script>
+<script>
+                function confirmarPergunta(event, form) {
+                    event.preventDefault();
+                    var decision = confirm("Você gostaria de denunciar essa postagem?");
+                    if (decision) {
+                        form.submit();
+                    }
+                    // colocar um Fhash aqui
+                }
+            </script>
+<script>
+
+document.getElementById('drop').addEventListener('click',function(){
+  document.querySelector('.dropdown:hover .dropdown-content').style.display = 'block';
+  document.querySelector('.perfil_nome a').style.display = 'none';
+  document.querySelector('.perfil_nomee a').style.display = 'block';
+  document.querySelector('.dropdown-content').style.display = 'block';
+});
+
+document.getElementById('dropp').addEventListener('click',function(){
+  document.querySelector('.dropdown-content').style.display = 'none';
+  document.querySelector('.perfil_nome a').style.display = 'block';
+  document.querySelector('.perfil_nomee a').style.display = 'none';
+});
+
+
+</script>
